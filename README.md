@@ -12,6 +12,14 @@
 | Кудрявцев Семен   |    4      | https://github.com/semkud/hse21_H3K4me1_ZDNA_mouse               |
 | Фридман Михаил    |    3      | https://github.com/Fryman420/bioinf2021_H3K4me1_human            |
 
+
+
+
+
+
+
+Посмотрев на участки полученные для пересесечения, стало понятно, что данные анализа мыши содержат мало пиков, поэтому пики были расширины с помощью коменды bedtools slop.
+
 Увеличение интерввла.
 
 `ls *bed | xargs -I{} sh -c "bedtools slop  -i {} -g hg19.chrom.sizes -b 500  > {}.bed"`

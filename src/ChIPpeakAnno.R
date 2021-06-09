@@ -7,17 +7,20 @@ source('lib.R')
 #BiocManager::install("org.Mm.eg.db")
 
 library(ChIPpeakAnno)
-#library(TxDb.Mmusculus.UCSC.mm10.knownGene)
 library(TxDb.Hsapiens.UCSC.hg19.knownGene)
-#library(org.Mm.eg.db)
 library(org.Hs.eg.db)
 
 
-DATA_DIR <- '../data/'
+DATA_DIR <- '../data/slop/'
+OUT_DIR <- '../data/slop/anno/'
+
+#NAME <- 'human'
+#NAME <- 'human_merged'
+
 ###
 
 
-peaks <- toGRanges(paste0(DATA_DIR, 'H3K4me1_ES-E14.intersect_with_mouseZ-DNA1.hg19.bed'), format="BED")
+peaks <- toGRanges(paste0(DATA_DIR, NAME, '.bed'), format="BED")
 peaks[1:2]
 
 annoData <- toGRanges(TxDb.Hsapiens.UCSC.hg19.knownGene)
@@ -34,9 +37,9 @@ anno$symbol <- xget(anno$feature, org.Hs.egSYMBOL)
 data.frame(anno) %>% head()
 
 anno_df <- data.frame(anno)
-write.table(anno_df, file=paste0(DATA_DIR, 'H3K4me1_ES-E14.intersect_with_mouseZ-DNA1.hg19.genes.txt'),
+write.table(anno_df, file=paste0(OUT_DIR, NAME, '.genes.txt'),
             col.names = TRUE, row.names = FALSE, sep = '\t', quote = FALSE)
 
 uniq_genes_df <- unique(anno_df['symbol'])
-write.table(uniq_genes_df, file=paste0(DATA_DIR, 'H3K4me1_ES-E14.intersect_with_mouseZ-DNA1.hg19.genes_uniq.txt'),
+write.table(uniq_genes_df, file=paste0(OUT_DIR, NAME, '.genes_uniq.txt'),
             col.names = FALSE, row.names = FALSE, sep = '\t', quote = FALSE)

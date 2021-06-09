@@ -11,3 +11,8 @@
 | Залялов Александр |    1      | https://github.com/vporyadke/hse21_H3K4me1_ZDNA_human            |
 | Кудрявцев Семен   |    4      | https://github.com/semkud/hse21_H3K4me1_ZDNA_mouse               |
 | Фридман Михаил    |    3      | https://github.com/Fryman420/bioinf2021_H3K4me1_human            |
+
+Увеличение интерввла.
+
+`ls *bed | xargs -I{} sh -c "bedtools slop  -i {} -g hg19.chrom.sizes -b 500  > {}.bed"`
+

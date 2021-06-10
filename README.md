@@ -22,14 +22,6 @@
 
 `ls *bed | xargs -I{} sh -c "bedtools slop  -i {} -g hg19.chrom.sizes -b 500  > {}.bed"`
 
-Посмотрев на участки полученные для пересечения, стало понятно, что данные анализа мыши содержат мало пиков, поэтому пики были расширены с помощью коменды bedtools slop.
-
-Увеличение интервала.
-
-`ls *bed | xargs -I{} sh -c "bedtools slop  -i {} -g hg19.chrom.sizes -b 500  > {}.bed"`
-
-
-
 
 
 ### Genome Browser
@@ -54,4 +46,4 @@
 
   track visibility=dense name="human_mouse_intersect"  description="Human_mouse_intersect.bed" color=0,200,0
   https://raw.githubusercontent.com/zilzilok/hse21_ZDNA_H3K4me1_group/main/data/slop/human_mouse.bed 
-```
+ ```

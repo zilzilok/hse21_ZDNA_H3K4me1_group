@@ -1,11 +1,14 @@
-_ 1623280282882
+_ 1623283546998
 addTracksButton add custom tracks
+altSeqLiftOverPsl_imgOrd 20
 c chr19
 clade mammal
 cons100way hide
 cons60way hide
-ct_humanmouseintersect_8550 pack
-ctfile_hg19 ../trash/ct/ct_genome_3bdde_150cc0.bed
+ct_human_7680_imgOrd 1
+ct_humanmouseintersect_8550_imgOrd 3
+ct_mouse_6921_imgOrd 2
+ctfile_hg19 ../trash/ct/ct_genome_468ba_157550.bed
 db hg19
 dbSnp153Composite hide
 dinkL 2.0
@@ -20,8 +23,9 @@ hgFind.matches
 hgS_loadUrlName 
 hgS_otherUserName 
 hgS_otherUserSessionName 
-hgS_saveLocalFileCompress none
-hgS_saveLocalFileName human_merge_mouse
+hgS_saveLocalFileCompress gzip
+hgS_saveLocalFileName human_mouse_merge
+hgTracksConfigPage notSet
 hgctNoRemove_navDest ../cgi-bin/hgTracks
 hgsid 1124304403_8ysMiaQJlnWo5gXcGekRO22QZEIc
 hgta_group user
@@ -38,23 +42,23 @@ hgtgroup_rep_close 0
 hgtgroup_rna_close 0
 hgtgroup_user_close 0
 hgtgroup_varRep_close 0
-knownGene hide
+knownGene dense
 knownGene.label.gene 1
-l 0
-lastPosition []
+knownGene_imgOrd 19
+l 41193222
+lastPosition chr19:41195601-41195886
 lastVirtModeExtra 
 lastVirtModeExtraState 
 lastVirtModeType default
 o 121341500
-oldPosition chr19:1-59128983
+oldPosition chr19:41194314-41197173
 org Human
 pix 1134
-position chr19:1-59128983
-position chr19:1-59128983
-position.hg19 lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr19%3A1%2D59128983
+position chr19:41194314-41197173
+position.hg19 lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr19%3A41194314%2D41197173
 position.mm10 lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A93337538%2D93346507
 pubs hide
-r 59128983
+r 41198142
 refSeqComposite hide
 rmsk hide
 ruler full

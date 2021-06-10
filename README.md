@@ -34,7 +34,8 @@
 
 ### Genome Browser
 
-- ` track visibility=dense name="human"    color=0,0,200  description="human_merge.bed.bed"
+```
+  track visibility=dense name="human"    color=0,0,200  description="human_merge.bed.bed"
   https://raw.githubusercontent.com/zilzilok/hse21_ZDNA_H3K4me1_group/main/data/slop/human_merged.bed
 
   track visibility=dense name="mouse"  color=0,200,0   description="mouse.bed"
@@ -42,12 +43,15 @@
 
   track visibility=dense name="human_mouse_intersect"   color=200,0,0  description="human_mouse_intersect.bed"
   https://raw.githubusercontent.com/zilzilok/hse21_ZDNA_H3K4me1_group/main/data/slop/human_merged_mouse.bed 
+```
 
-- ` track visibility=dense name="human"  description="human_merge.bed"   color=200,0,0   
+ ```
+  track visibility=dense name="human"  description="human_merge.bed"   color=200,0,0   
   https://raw.githubusercontent.com/zilzilok/hse21_ZDNA_H3K4me1_group/main/data/slop/human_merged.bed
 
   track visibility=dense name="mouse"  color=0,0,200   description=mouse.bed"
   https://raw.githubusercontent.com/zilzilok/hse21_ZDNA_H3K4me1_group/main/data/slop/H3K4ME1_MEL_mouse.intersect.ZDNA1hg19.bed.bed
 
   track visibility=dense name="human_mouse_intersect"  description="Human_mouse_intersect.bed" color=0,200,0
-  https://raw.githubusercontent.com/zilzilok/hse21_ZDNA_H3K4me1_group/main/data/slop/human_mouse.bed `
+  https://raw.githubusercontent.com/zilzilok/hse21_ZDNA_H3K4me1_group/main/data/slop/human_mouse.bed 
+```
